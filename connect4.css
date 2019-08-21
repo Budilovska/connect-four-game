@@ -1,0 +1,201 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    position: ;
+
+}
+
+.container {
+    background: url(spaceBackground.jpg);
+    min-height: 100vh;
+    width: 100%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.board {
+    margin-left: 15%;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.slot {
+    height: 110px;
+    width: 110px;
+    background-color: Black;
+    padding: 10px 0 0 10px;
+/* box-shadow:  */
+}
+
+.hole {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    border: solid 2px magenta;
+    border-radius: 15%;
+}
+
+.Luke .hole {
+    background-image: url("luke.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.Stormtrooper .hole {
+    background-image: url("badGuy.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.modal-container {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: url(starSky.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 20;
+
+}
+
+.hidden {
+    display: none;
+}
+
+.win-message {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    background-color: rgba(0, 0, 0, .9);
+    visibility: hidden;
+}
+
+.show-win-message {
+    visibility: visible;
+}
+
+#dart {
+    height: 700px;
+    -webkit-filter: drop-shadow(6px 6px 6px white);
+    filter: drop-shadow(6px 6px 6px white);
+    position: absolute;
+    transform: translateX(180%);
+}
+
+.moveDart #dart {
+    transform: translateX(70%);
+    transition-duration: 4s;
+}
+
+h2 {
+    width: 300px;
+    padding: 0px;
+    font-size: 60px;
+    margin-left: 250px;
+    margin-bottom: 250px;
+    color: #FDDF33;
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+
+button {
+    background: black;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+}
+
+.yoda-container {
+    position: absolute;
+    bottom: 10%;
+    right: 9%;
+}
+
+#yoda {
+    height: 400px;
+}
+
+#yoda-says {
+    width: 300px;
+}
+
+.hide-yoda-says {
+    visibility: hidden;
+}
+
+h3 {
+    font-size: 30px;
+    color: #FDDF33;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    background-color: black;
+    margin: 0;
+    margin-bottom: 30px;
+    margin-left: 70px;
+}
+
+.rules-container {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background: url(starSky.jpg);
+    overflow: hidden;
+}
+
+.fade {
+  position: relative;
+  width: 100%;
+  min-height: 60vh;
+  top: -25px;
+  background-image: linear-gradient(0deg, transparent, black 75%);
+  z-index: 1;
+}
+
+.star-wars {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  height: 800px;
+  color: #FDDF33;
+  font-family: 'Saira Semi Condensed', sans-serif;
+  font-size: 500%;
+  font-weight: 600;
+  letter-spacing: 6px;
+  line-height: 150%;
+  perspective: 400px;
+  text-align: justify;
+}
+
+.crawl {
+  position: relative;
+  top: 99999px;
+  transform-origin: 50% 100%;
+  animation: crawl 60s linear;
+}
+
+.crawl > .title {
+  font-size: 90%;
+  text-align: center;
+}
+
+.crawl > .title h1 {
+  margin: 0 0 100px;
+  text-transform: uppercase;
+}
+
+@keyframes crawl {
+    0% {
+    top: -100px;
+    transform: rotateX(20deg)  translateZ(0);
+  }
+    100% {
+    top: -6000px;
+    transform: rotateX(25deg) translateZ(-2500px);
+  }
+}

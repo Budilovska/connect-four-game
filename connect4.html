@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="connect4.css">
+        <link href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed:500&display=swap" rel="stylesheet">
+        <title></title>
+    </head>
+    <body>
+
+        <div class="yoda-container">
+        <div id="yoda-says">
+        <h3>On me must you click the game to start</h3>
+        </div>
+        <img id="yoda" src="yoda.png">
+        </div>
+
+        <div class="modal-container hidden">
+            <div class="modal-content">
+<img src="https://fontmeme.com/permalink/190615/12aa375ad106cdbf15c836d82efafb9f.png" alt="star-wars-font" border="0">
+            </div>
+        </div>
+
+
+        <div class="rules-container hidden">
+             <div class="fade"></div>
+            <section class="star-wars">
+              <div class="crawl">
+                <div class="title">
+                  <p>Episode I</p>
+                  <h1>Fight for Slots</h1>
+                </div>
+                <p>To win Connect Four you must be the first to invade four slots in a row either horizontally, vertically or diagonally. May the force be with you. <br><br>Connect Four is a two-player game with "perfect information". This term describes games where one player at a time plays, players have all the information about moves that have taken place, and all moves that can take place, for a given game state. Connect Four also belongs to the classification of an adversarial, zero-sum game, since a player's advantage is an opponent's disadvantage.</p>
+              </div>
+            </section>
+            </div>
+
+
+
+<audio id="mainTheme">
+<source src="star-wars-theme-song.mp3" type="audio/mpeg">
+</audio>
+
+<audio id="laser">
+<source src="laser.mp3" type="audio/mpeg">
+</audio>
+
+
+<div class="win-message">
+    <img id="dart" src="dart.png">
+    <div id="end-game-message">
+    </div>
+</div>
+
+<div class="container">
+<div class="board">
+    <div class="column">
+    <div class="slot row0">
+            <div class="hole"></div>
+    </div>
+    <div class="slot row1">
+            <div class="hole"></div>
+    </div>
+    <div class="slot row2">
+            <div class="hole"></div>
+    </div>
+    <div class="slot row3">
+            <div class="hole"></div>
+    </div>
+            <div class="slot row4">
+    <div class="hole"></div>
+    </div>
+    <div class="slot row5">
+            <div class="hole"></div>
+    </div>
+</div>
+
+<div class="column">
+    <div class="slot row0">
+            <div class="hole"></div>
+    </div>
+    <div class="slot row1">
+            <div class="hole"></div>
+    </div>
+    <div class="slot row2">
+            <div class="hole"></div>
+    </div>
+    <div class="slot row3">
+            <div class="hole"></div>
+    </div>
+            <div class="slot row4">
+    <div class="hole"></div>
+    </div>
+    <div class="slot row5">
+            <div class="hole"></div>
+    </div>
+</div>
+
+<div class="column">
+    <div class="slot row0">
+            <div class="hole"></div>
+    </div>
+    <div class="slot row1">
+            <div class="hole"></div>
+    </div>
+    <div class="slot row2">
+            <div class="hole"></div>
+    </div>
+    <div class="slot row3">
+            <div class="hole"></div>
+    </div>
+            <div class="slot row4">
+    <div class="hole"></div>
+    </div>
+    <div class="slot row5">
+            <div class="hole"></div>
+    </div>
+</div>
+
+<div class="column">
+    <div class="slot row0">
+            <div class="hole"></div>
+    </div>
+    <div class="slot row1">
+            <div class="hole"></div>
+    </div>
+    <div class="slot row2">
+            <div class="hole"></div>
+    </div>
+    <div class="slot row3">
+            <div class="hole"></div>
+    </div>
+            <div class="slot row4">
+    <div class="hole"></div>
+    </div>
+    <div class="slot row5">
+            <div class="hole"></div>
+    </div>
+</div>
+
+<div class="column">
+    <div class="slot row0">
+            <div class="hole"></div>
+    </div>
+    <div class="slot row1">
+            <div class="hole"></div>
+    </div>
+    <div class="slot row2">
+            <div class="hole"></div>
+    </div>
+    <div class="slot row3">
+            <div class="hole"></div>
+    </div>
+            <div class="slot row4">
+    <div class="hole"></div>
+    </div>
+    <div class="slot row5">
+            <div class="hole"></div>
+    </div>
+</div>
+
+<div class="column">
+    <div class="slot row0">
+            <div class="hole"></div>
+    </div>
+    <div class="slot row1">
+            <div class="hole"></div>
+    </div>
+    <div class="slot row2">
+            <div class="hole"></div>
+    </div>
+    <div class="slot row3">
+            <div class="hole"></div>
+    </div>
+            <div class="slot row4">
+    <div class="hole"></div>
+    </div>
+    <div class="slot row5">
+            <div class="hole"></div>
+    </div>
+</div>
+
+<div class="column">
+    <div class="slot row0">
+            <div class="hole"></div>
+    </div>
+    <div class="slot row1">
+            <div class="hole"></div>
+    </div>
+    <div class="slot row2">
+            <div class="hole"></div>
+    </div>
+    <div class="slot row3">
+            <div class="hole"></div>
+    </div>
+            <div class="slot row4">
+    <div class="hole"></div>
+    </div>
+    <div class="slot row5">
+            <div class="hole"></div>
+    </div>
+</div>
+</div>
+
+            <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+            <script src="connect4.js" charset="utf-8"></script>
+    </body>
+</html>
